@@ -1,0 +1,84 @@
+*{
+    scroll-behavior: smooth;
+    /* impede q a cx cresça mais do q foi computado */
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #9c6644;
+    
+}
+nav{
+    background-color: #7f5539;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex; 
+    /* veremos mais pra frente sobre isto, flex */
+    
+}
+
+nav a{ 
+    padding: 20px;
+    display: inline-block;
+
+}
+
+
+/* seletor de id"sobre" */
+#sobre{
+
+    background-color: #ddb892;
+}
+
+#menu{
+    background-color: #ede0d4;
+
+}
+
+.container{
+    max-width: 900px;
+    margin: auto;
+
+}
+/* hack do menu fixo, colocamos o padding-top para os títulos das seções não entrarem embaixo do menu */
+header, section {
+    padding: 50px 30px 30px;
+    min-height: 90vh;
+    /* viewport height (90% da tela visível) */
+    
+}
+header{
+    text-align: center;
+    padding-top: 30vh;
+    background-color: #e6ccb2;
+    
+    }
+
+table{
+    width: 90%;
+    }
+
+th, td{
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    /* dotted é pontilhado */
+    text-align: center;
+}
+
+th{
+    background-color: #b08968;
+    color: #001219;
+}
+
+/* formatação dos links */
+nav a:link, nav a: :visited{
+    text-decoration: none;
+    color: #f95738;
+}
+
+nav a: hover{
+    text-decoration: underline;
+    color: #ffd60a;
+}
